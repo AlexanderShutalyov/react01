@@ -1,9 +1,8 @@
 import './App.css';
 import React from 'react';
-import {FNButton, FNComponent, FNBlock} from "./sandbox/FuncComponent/index";
-import { element1, element2 } from './sandbox/JSX/index';
-
-import { ClassComponent } from "./sandbox/ClassComponent/index";
+import {FNButton} from "./components/FuncComponent/fnButton";
+import {FNBlock} from "./components/FuncComponent/fnBlock";
+import { ClassComponent } from "./components/ClassComponent/blockPopup";
 
 
 // import { ClassComponent } from './sandbox/ClassComponent/index';
@@ -13,13 +12,19 @@ class App extends React.Component {
   render() {
     return(
         <React.Fragment>
-          {/*<FNButton className="SomeClass" cssName="red"/>*/}
+          {/*BUTTON*/}
           <FNButton cssName="button-success"/>
           <FNButton cssName="button-error"/>
           <FNButton cssName="button-default"/>
-          <FNBlock fnTitle="TiTlE" fnBody="BoDy" />
-          <ClassComponent fnTitle="TiTlE" fnBody="BoDy" />
-          {/*<FNComponent className="SomeClass" cssName="red"/>*/}
+
+          {/*COMPONENT*/}
+          <FNBlock compCss="comp-success" fnTitle="Success title" fnBody="Success body" />
+          <FNBlock compCss="comp-error" fnTitle="Error title" fnBody="Error body" />
+          <FNBlock compCss="comp-default" fnTitle="Default title" fnBody="Default title" />
+
+          {/*POPUP*/}
+          <ClassComponent fnTitle="Block with POPUP!" fnBody="BoDy" />
+
         </React.Fragment>
     )
   }

@@ -12,6 +12,23 @@ code {
     monospace;
 }
 
+.comp-success {
+  background-color: transparent;
+  border: solid green;
+  color: green;
+}
+
+.comp-error {
+  border: solid red;
+  color: red;
+}
+
+.comp-default {
+  size: 12px;
+  border: solid purple;
+}
+
+
 .button-success {
   background-color: transparent;
   border: solid green;

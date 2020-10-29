@@ -10,7 +10,7 @@ export class ClassComponent extends React.Component {
         this.setState({ show: "true"} )
         setInterval(
             () => this.setState({ show: "false"} ),
-            1000
+            3000
         );
     };
 
