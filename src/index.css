@@ -27,7 +27,10 @@ code {
   size: 12px;
 }
 
-
+.popup-div {
+  display: inline-block;
+  border: 1px solid red;
+}
 
 .b-popup{
   width:100%;

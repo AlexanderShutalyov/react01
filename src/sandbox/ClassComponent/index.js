@@ -18,7 +18,7 @@ export class ClassComponent extends React.Component {
         const { fnTitle, fnBody } = this.props;
         if (this.state.show === "true") {
             return (
-                <div onMouseOver={this.popup}>
+                <div className="popup-div" onMouseOver={this.popup}>
                     <h1>POPUP - {fnTitle}</h1>
                     <p>{fnBody}</p>
                     <div className="b-popup">
@@ -30,7 +30,7 @@ export class ClassComponent extends React.Component {
             )
         } else {
             return (
-                <div onMouseOver={this.popup}>
+                <div className="popup-div" onMouseOver={this.popup}>
                     <h1>NO POPUP - {fnTitle}</h1>
                     <p>{fnBody}</p>
                 </div>
